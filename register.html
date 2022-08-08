@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"> defer</script>
+
+    <style>
+        .my-container {
+            background-color: black;
+            color: darkgray;
+            font-size: 1.35rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        label {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home Page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="my-container">
+        <h2 style="margin: 3rem;
+    color: white;
+    border-bottom: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;">Registration Form</h2>
+
+        <form action="/" method="get" style="display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 3rem;">
+            <label style="margin: 0.5rem 0;" for="first_name">First Name
+                <input style='box-sizing: border-box;
+  margin: 0 3rem;
+  height: 1.75rem;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;' type="text" name="first_name" id="first_name" placeholder="Harsh" required>
+            </label>
+
+
+            <label style="margin: 0.5rem 0;" for="middle_name">Middle Name
+                <input style='box-sizing: border-box;
+  margin: 0 3rem;
+  height: 1.75rem;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;' type="text" name="middle_name" id="middle_name">
+            </label>
+
+
+            <label style="margin: 0.5rem 0;" for="last_name">Last Name
+                <input style='box-sizing: border-box;
+  margin: 0 3rem;
+  height: 1.75rem;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;' type="text" name="last_name" id="last_name" placeholder="Gupta" required>
+            </label>
+
+
+            <label style="margin: 0.5rem 0;" for="email">Email ID
+                <input style='box-sizing: border-box;
+  margin: 0 3rem;
+  height: 1.75rem;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;' type="email" name="email" id="email" placeholder="abc@xyz.com" required>
+            </label>
+
+
+            <label style="margin: 0.5rem 0;" for="mobile_number">Mobile Number
+                <input style='box-sizing: border-box;
+  margin: 0 3rem;
+  height: 1.75rem;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;' type="number" name="mobile_number" id="mobile_number" placeholder="7001876232" required>
+            </label>
+
+
+            <label style="margin: 0.5rem 0;" for="dob">DOB
+                <input style='box-sizing: border-box;
+  margin: 0 3rem;
+  height: 1.75rem;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;' type="date" name="dob" id="dob">
+            </label>
+
+
+            <label style="margin: 0.5rem 0;" for="">Gender
+                <input style='margin: 0 1rem;' type="radio" name="gender" id="male" value="Male" required>
+                <label style="margin: 0.5rem 0;" for="male">Male</label>
+                <input style='margin: 0 1rem;' type="radio" name="gender" id="female" value="Female">
+                <label style="margin: 0.5rem 0;" for="female">Female</label>
+            </label>
+
+
+            <label style="margin: 0.5rem 0;" for="occupation">Occupation
+                <select style='box-sizing: border-box;
+            margin: 0 3rem;
+            height: 1.75rem;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 1.15rem;
+            border-radius: 5px;
+            outline: none;
+            border: none;' name="occupation" id="occupation" required>
+                    <option value="Developer" selected>Developer</option>
+                    <option value="Student">Student</option>
+                    <option value="Artist">Artist</option>
+                    <option value="Business Analyst">Business Analyst</option>
+                    <option value="Construction Worker">Construction Worker</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Enterpreneur">Enterpreneur</option>
+                    <option value="Freelancer">Freelancer</option>
+                    <option value="Social Worker">Social Worker</option>
+                </select>
+            </label>
+
+
+            <label>Domain</label>
+
+            <label style="margin: 0.5rem 0;" for="electronics"><input style='margin: 0 1rem;' type="checkbox"
+                    name="domain" id="electronics" value="Electronics">Electronics</label>
+
+            <label style="margin: 0.5rem 0;" for="machine_learning"><input style='margin: 0 1rem;' type="checkbox"
+                    name="domain" id="machine_learning" value="Machine Learning">Machine
+                Learning</label>
+
+            <label style="margin: 0.5rem 0;" for="web_development"><input style='margin: 0 1rem;' type="checkbox"
+                    name="domain" id="web_development" value="Web Development">Web Development</label>
+
+            <label style="margin: 0.5rem 0;" for="app_development"><input style='margin: 0 1rem;' type="checkbox"
+                    name="domain" id="app_development" value="App Development">App Development</label>
+
+            <label style="margin: 0.5rem 0;" for="design"><input style='margin: 0 1rem;' type="checkbox" name="domain"
+                    id="design" value="Design">Design</label>
+
+            <label style="margin: 0.5rem 0;" for="cyber_security"><input style='margin: 0 1rem;' type="checkbox"
+                    name="domain" id="cyber_security" value="Cyber Security">Cyber Security</label>
+
+            <label style="margin: 0.5rem 0;" for="college">College
+                <input style='box-sizing: border-box;
+          margin: 0 3rem;
+          height: 1.75rem;
+          padding: 1rem;
+          font-family: "Times New Roman", Times, serif;
+          font-size: 1.15rem;
+          border-radius: 5px;
+          outline: none;
+          border: none;' type="text" name="college" id="college" placeholder="Vellore Institute of Technology, Vellore"
+                    required>
+            </label>
+
+            <label style="margin: 0.5rem 0;" for="year">Year
+                <input style='box-sizing: border-box;
+  margin: 0 3rem;
+  height: 1.75rem;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;' type="number" name="year" id="year" placeholder="2020" required>
+            </label>
+
+            <style>
+                .button {
+                    outline: none;
+                    border: none;
+                    padding: .5rem 1rem;
+                    margin: 2.5rem 0;
+                    margin-right: 1rem;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+            </style>
+
+            <div>
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Reset" class="button">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

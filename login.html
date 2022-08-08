@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"> defer</script>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .my-container {
+            background-color: black;
+            color: darkgray;
+            font-size: 1.35rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        label {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home Page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="my-container">
+        <h2 style="margin: 3rem;
+    color: white;
+    border-bottom: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;">Login Form</h2>
+
+        <form action="/" method="get" style="display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 3rem;">
+
+            <label style="margin: 0.15rem 0;" for="email">Email
+                <input style='box-sizing: border-box;
+  margin: 0 1rem;
+  height: 1.75rem;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;' type="email" name="email" id="email" placeholder="abc@xyz.com" required>
+            </label>
+
+            <hr style="color: white;">
+
+            <label style="margin: 0.15rem 0;" for="password">Password
+                <input style='box-sizing: border-box;
+  margin: 0 1rem;
+  height: 1.75rem;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;' type="password" name="password" id="password" placeholder="7001876232" required>
+            </label>
+
+            <style>
+                .button {
+                    outline: none;
+                    border: none;
+                    padding: .5rem 1rem;
+                    margin: 2.5rem 0;
+                    margin-right: 1rem;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+            </style>
+
+            <div>
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Reset" class="button">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
